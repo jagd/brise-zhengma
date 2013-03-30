@@ -4,13 +4,15 @@
 schema:
   schema_id: zhengma
   name: "郑码"
-  version: "0.8"
+  version: "0.8.1"
   author:
     - 發明人 郑易里教授
   description: |
     郑码
     碼表源自 40737127群的极点郑码十周年纪念版中的超大字符集郑码超级郑码群修正版
-    請安裝【袖珍簡化字拼音】以啓用 ` 鍵拼音反查
+    通過【袖珍簡化字拼音】實現 ` 鍵拼音反查
+  dependencies:
+    - pinyin_simp
 
 switches:
   - name: ascii_mode

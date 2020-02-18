@@ -4,13 +4,10 @@
 schema:
   schema_id: zhengma
   name: "郑码"
-  version: "0.8.1"
+  version: "0.0.1"
+  sort: original
   author:
-    - 發明人 郑易里教授
-  description: |
-    郑码
-    碼表源自 40737127群的极点郑码十周年纪念版中的超大字符集郑码超级郑码群修正版
-    通過【袖珍簡化字拼音】實現 ` 鍵拼音反查
+  description:
   dependencies:
     - pinyin_simp
 
@@ -47,11 +44,12 @@ speller:
   max_code_length: 4
 
 translator:
+  enable_user_dict: false # 禁止调词频
   dictionary: zhengma
 
 reverse_lookup:
   dictionary: pinyin_simp
-  prefix: "`"
+  prefix: "#"
   tips: 〔拼音〕
   preedit_format:
     - xform/([nljqxy])v/$1ü/
@@ -65,4 +63,4 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[a-z]*$"
+    reverse_lookup: "#[a-z]*$"

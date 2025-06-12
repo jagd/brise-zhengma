@@ -2,13 +2,20 @@
 
 ## 安装
 
-- 若无 GUI 介面，建 `default.custom.yaml`
+若无 GUI 介面，建 `default.custom.yaml`
 
-  ```yaml
-  patch:
-    schema_list:
-      - schema: zhengma
-  ```
+```yaml
+patch:
+  schema_list:
+    - schema: zhengma
+#### German Layout for Windows: ####
+# key_binder:
+#   bindings:
+#     - { when: always, accept: y, send: z }
+#     - { when: always, accept: z, send: y }
+#     - { when: always, accept: backslash, send: '#' }
+```
+
 - 复制 `*.yaml` 文件到
   - `Windows`: `%APPDATA%\Rime`
   - `Linux` / `BSD`

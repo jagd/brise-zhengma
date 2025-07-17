@@ -8,6 +8,11 @@
 patch:
   schema_list:
     - schema: zhengma
+  app_options:
+    cmd.exe:
+      ascii_mode: false
+    conhost.exe:
+      ascii_mode: false
 #### German Layout for Windows: ####
 # key_binder:
 #   bindings:

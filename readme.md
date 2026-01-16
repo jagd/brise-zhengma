@@ -42,7 +42,13 @@ patch:
 
 - `pinyin_simp.*.yaml` 作为反查(#键)拼音码表
 - 德语键盘注删表[文件](replace-zh-kbd-by-de.reg)（更好方案为将所有中文输入法改为德语，而不仅限于该输入法）
-- Add to other languages, en-US:409 en-UK:809 en-CA:1009 de-DE:407
+- Register in other languages, replace the suffix of LANGID by
+
+  - en-US: 409
+  - en-UK: 809
+  - en-CA: 1009
+  - de-DE: 407
+
   ```
   set LANGID=0x00000409
   set BASEKEY=HKLM\SOFTWARE\Microsoft\CTF\TIP\{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}\LanguageProfile\%LANGID%
